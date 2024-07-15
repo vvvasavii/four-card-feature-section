@@ -1,0 +1,236 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/*styling starts here*/
+:root {
+    /*Primary*/
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /*Neutral*/
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--Very-Light-Gray);
+}
+
+.content-above-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 1.76rem;
+}
+
+.opening-line {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: hsl(229, 1%, 35%);
+    margin-bottom: -0.1rem;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.79rem;
+}
+
+.main-para {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.938rem;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    line-height: 1.52;
+}
+
+.cards {
+    text-align: left;
+    padding: 1.7rem;    
+}
+
+span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 0.83rem;
+    color: var(--Grayish-Blue);
+    margin-bottom: 1.9rem;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.09rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.2rem;
+}
+
+
+.first-card {
+    border: 1px solid white;
+    background-color: white;
+    border-top: 3.9px solid var(--Cyan);
+    border-radius: 5.5px;
+    box-shadow: 0px 11px 10px rgba(0, 0, 212, 0.1);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+img {
+    width: 7.6vh;
+    height: auto;
+    align-self: flex-end;
+}
+
+.second-card {
+    border: 1px solid white;
+    background-color: white;
+    border-top: 3.9px solid var(--Red);
+    border-radius: 5.5px;
+    box-shadow: 0px 11px 10px rgba(0, 0, 212, 0.1);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.third-card {
+    border: 1px solid white;
+    background-color: white;
+    border-top: 3.9px solid var(--Orange);
+    border-radius: 5.5px;
+    box-shadow: 0px 11px 10px rgba(0, 0, 212, 0.1);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.fourth-card {
+    border: 1px solid white;
+    background-color: white;
+    border-top: 3.9px solid var(--Blue);
+    border-radius: 5.5px;
+    box-shadow: 0px 11px 10px rgba(0, 0, 212, 0.1);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+/*media queries for website resonsiveness*/
+ 
+@media(min-width:660px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .first-card{
+        margin-right: 1.3rem;
+    }
+    .flex-cards{
+        margin-right: 1.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .first-card, .second-card, .third-card, .fourth-card {
+        flex: 1;
+        max-width: 21vw;
+        
+    }
+    .content-above-card{
+        max-width: 35rem;
+    }
+
+}
