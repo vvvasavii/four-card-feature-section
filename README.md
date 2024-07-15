@@ -24,8 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Live Site URL: [https://four-card-feature-section-ruby-nu.vercel.app/]
 
 ## My process
 
@@ -44,7 +43,7 @@ In short,this project helped me grasp how to actually use styles and put my newl
 
 ## Author
 
-- Website - []
+- Website - [https://four-card-feature-section-ruby-nu.vercel.app/]
 - Frontend Mentor - [https://www.frontendmentor.io/profile/vvvasavii]
 ## Acknowledgments
 Having no mentors in the cs field, I completed this project majorly by myself. Whenever i was stuck on a certain piece of code I would search the internet for solutions to questions posted by people who were also stuck similarly before me.
